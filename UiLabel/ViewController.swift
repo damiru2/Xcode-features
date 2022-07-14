@@ -9,18 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    @IBOutlet weak var someButton: UIButton!
-    
   override func viewDidLoad() {
         super.viewDidLoad()
         
 }
 
-    @IBAction func buttonAction(_ sender: UIButton) {
-        
-        print("hello")
-    }
     
 }
 
