@@ -42,12 +42,12 @@ class ViewController: UIViewController {
 }
     
     @IBAction func trueAction(_ sender: UIButton) {
-        
+        titleLabel.text = Source.getInfo(type: .word)
         
     }
     
     @objc func letAction() {
-        titleLabel.text = ""
+        titleLabel.text = Source.getInfo(type: .action)
     }
     
 }
