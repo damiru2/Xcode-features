@@ -23,31 +23,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyb-ys-yI5">
-                                <rect key="frame" x="16" y="660" width="145" height="109"/>
+                                <rect key="frame" x="16" y="634" width="145" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="RhN-kQ-PqT"/>
                                     <constraint firstAttribute="height" constant="109" id="oz1-lm-M7F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Правда">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="trueAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k8V-0B-2TL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c5y-AU-VMy" secondAttribute="trailing" constant="16" id="F55-D7-xvE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hyb-ys-yI5" secondAttribute="bottom" constant="93" id="Hqi-dj-Nzv"/>
                             <constraint firstItem="c5y-AU-VMy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Nsy-qj-o8e"/>
                             <constraint firstItem="Hyb-ys-yI5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SUH-Qh-c5U"/>
                             <constraint firstItem="c5y-AU-VMy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZcC-i0-liV"/>
+                            <constraint firstAttribute="bottom" secondItem="Hyb-ys-yI5" secondAttribute="bottom" constant="153" id="ha4-sf-b3w"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="c5y-AU-VMy" id="90y-sY-bQs"/>
+                        <outlet property="trueButton" destination="Hyb-ys-yI5" id="urJ-IK-Rb3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
